@@ -4,7 +4,7 @@ A method to plan my shopping trips using the [5W2Hs](https://www.indeed.com/care
 
 ## Usage
 
-0. Download the [Excel](groceries.xlsx)/[ODS](groceries.ods) file and open it.
+0. Download the [Excel](https://github.com/skedastically/groceries-5w2h/raw/main/groceries.xlsx)/[ODS](https://github.com/skedastically/groceries-5w2h/raw/main/groceries.ods) file and open it.
 
 1. Enter your budget (cell `I1`).
 
