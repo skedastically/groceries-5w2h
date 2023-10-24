@@ -2,6 +2,9 @@
 
 A method to plan my shopping trips using the [5W2Hs](https://www.indeed.com/career-advice/career-development/5w2h-analysis)
 
+_Example_:
+![Example](header.png)
+
 ## Usage
 
 0. Download the [Excel](https://github.com/skedastically/groceries-5w2h/raw/main/groceries.xlsx)/[ODS](https://github.com/skedastically/groceries-5w2h/raw/main/groceries.ods) file and open it.
