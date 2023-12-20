@@ -2,6 +2,8 @@
 
 A method to plan my shopping trips using the [5W2Hs](https://www.indeed.com/career-advice/career-development/5w2h-analysis)
 
+![Example](header.png)
+
 ## Usage
 
 0. Download the [Excel](groceries.xlsx)/[ODS](groceries.ods) file and open it.
