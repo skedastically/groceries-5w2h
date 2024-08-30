@@ -11,7 +11,7 @@ _Example_:
 
 1. Enter your budget (cell `I1`).
 
-2. Browse the flyers[^1] and choose the items you like.
+2. Browse the [flyers](#flyers) and choose the items you like.
 
 3. In each row, log down `what` the item is, `where` to get it and its listed `price`.
 
@@ -33,31 +33,66 @@ _Example_:
 
 > *Notes: Edit the `Discount` sheet and the discount/tax rates per your needs.*
 
-## Other tips
+## Flyers
+
+For simplicity, use Flipp -> https://flipp.com
+
+Otherwise, here is a list of relevant store flyers
+
+### Groceries
+
+- [FoodBasics](https://www.foodbasics.ca/flyer)
+- [Real Canadian Superstore](https://www.realcanadiansuperstore.ca/print-flyer)
+- [No Frills](https://www.nofrills.ca/print-flyer)
+- [Walmart](https://www.walmart.ca/flyer)
+- [Giant Tiger](https://www.gianttiger.com/collections/flyers-and-deals?view=flyers) [a]
+- [Metro](https://www.metro.ca/en/flyer)
+- [ValuMart](https://www.valumart.ca/print-flyer) [a],[b]
+- [FreshCo](https://freshco.com/flyer/)
+- [Loblaws](https://www.loblaws.ca/print-flyer)
+- [Sobeys](https://www.sobeys.com/en/flyer/)
+
+### Non-groceries
+
+- [Rexall](https://www.rexall.ca/eflyer/) [a],[b]
+- [Shopper's Dryg Mart](https://www.shoppersdrugmart.ca/en/flyer) [a],[b]
+- [Forest City Surplus](https://www.fcsurplus.com/flyer.pdf)
+- [Canadian Tire](https://www.canadiantire.ca/en/flyer.html)
+
+[a]: requires zip code  
+[b]: requires store selection  
+
+Additions welcomed.
+
+## Advanced usage
+
+### Suggested syntax of `what` field
+
+```txt
+[item name in camel case] + [ brand name in camel case] 
++ [unit of measurement]
+
+Examples:
+
+- redOnions7lb
+- broccoli1ea (one each)
+- detergentBrand700ml
+```
+
+This would make it easier to fuzzy-query item name and prices per kg/lb. 
+
+Discussions on improvements welcomed.
+
+### Discounts setup
+
+Go to the `Discount` worksheet to set up the stores and their shortcodes.
+
+### Other tips
 
 - Use "Duplicate sheet" to create new plans every week.
 
-- Set a timer towards your next bus to avoid **wasting time**[^2] in the store.
+- Set a timer towards your next bus to avoid **wasting time**[^1] in the store.
 
 - Think of shopping not as a relaxing period, but a game we have to play in life.
 
-[^1]: Flyers for stores near Fanshawe College main campus (Zip code: `N5Y 5R6`)
-    - [FoodBasics](https://foodbasics.ca/flyer.en.html) (requires store selection)
-    - [Real Canadian Superstore](https://www.realcanadiansuperstore.ca/print-flyer)
-    - [No Frills](https://www.nofrills.ca/print-flyer)
-    - [Walmart](https://www.walmart.ca/flyer)
-    - [Giant Tiger](https://www.gianttiger.com/collections/flyers-and-deals?view=flyers) (requires postcode)
-    - [Metro](https://www.metro.ca/en/flyer)
-    - [ValuMart](https://www.valumart.ca/print-flyer) (requires postcode + store selection)
-    - [FreshCo](https://freshco.com/flyer/)
-    - [Loblaws](https://www.loblaws.ca/print-flyer)
-    - [Sobeys](https://www.sobeys.com/en/flyer/)
-
-    Non-groceries
-    
-    - [Rexall](https://www.rexall.ca/eflyer/) (requires postcode + store selection)
-    - [Shopper's](https://www.shoppersdrugmart.ca/en/flyer) (requires postcode + store selection)
-    - [Forest City Surplus](https://www.fcsurplus.com/flyer.pdf)
-    - [Canadian Tire](https://www.canadiantire.ca/en/flyer.html)
-
-[^2]: "Time is money only when you have money. If you don't have money, time doesn't mean shit" - D.J.
+[^1]: "Time is money only when you have money. If you don't have money, time doesn't mean shit" - D.J.
