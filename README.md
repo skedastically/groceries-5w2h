@@ -9,7 +9,7 @@ _Example_:
 
 0. Download the [Excel](https://github.com/skedastically/groceries-5w2h/raw/main/groceries.xlsx)/[ODS](https://github.com/skedastically/groceries-5w2h/raw/main/groceries.ods) file and open it.
 
-1. Add `planned` and `shopped` dates.
+1. (Optional) Add `planned` and `shopped` dates.
 
 2. Enter your budget (cell `I1`).
 
