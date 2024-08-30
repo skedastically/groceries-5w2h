@@ -9,27 +9,29 @@ _Example_:
 
 0. Download the [Excel](https://github.com/skedastically/groceries-5w2h/raw/main/groceries.xlsx)/[ODS](https://github.com/skedastically/groceries-5w2h/raw/main/groceries.ods) file and open it.
 
-1. Enter your budget (cell `I1`).
+1. Add `planned` and `shopped` dates.
 
-2. Browse the [flyers](#flyers) and choose the items you like.
+2. Enter your budget (cell `I1`).
 
-3. In each row, log down `what` the item is, `where` to get it and its listed `price`.
+3. Browse the [flyers](#flyers) and choose the items you like.
+
+4. In each row, log down `what` the item is, `where` to get it and its listed `price`.
 
    - Use shortcodes as listed in `$Discount` sheet (e.g. `fb` for Food Basics). The workbook will VLOOKUP() relevant stores to find discounts (`disc`)
 
    - Toggle on tax (`tax`) if necessary (0=no tax (default), 1=taxed)
 
-4. Assign `category` to each line item (vegetables? fruits? meat? i.e. `why` you buy it)
+5. Assign `category` to each line item (vegetables? fruits? meat? i.e. `why` you buy it)
 
-5. Sort table by `category`.
+6. Sort table by `category`.
 
-6. For each category, choose the best deal(s) based on `price` and `where`, and input quantity bought in `quantity`. Try not to go over your budget.
+7. For each category, choose the best deal(s) based on `price` and `where`, and input quantity bought in `quantity`. Try not to go over your budget.
 
-7. Sort table by `where`, and **filter out empty values** in `quantity`. You will have a list of your final items.
+8. Sort table by `where`, and **filter out empty values** in `quantity`. You will have a list of your final items.
 
-8. Determine `when` to shop - which store to go first-to-last in a particular order.
+9. Determine `when` to shop - which store to go first-to-last in a particular order.
 
-9. (optional, in groups) Determine `who` to shop for each store.
+10. (optional, in groups) Determine `who` to shop for each store.
 
 > *Notes: Edit the `Discount` sheet and the discount/tax rates per your needs.*
 
@@ -51,6 +53,7 @@ Otherwise, here is a list of relevant store flyers
 - [FreshCo](https://freshco.com/flyer/)
 - [Loblaws](https://www.loblaws.ca/print-flyer)
 - [Sobeys](https://www.sobeys.com/en/flyer/)
+- [Costco](https://www.costco.ca/coupons.html) [a]
 
 ### Non-groceries
 
@@ -69,17 +72,21 @@ Additions welcomed.
 ### Suggested syntax of `what` field
 
 ```txt
-[item name in camel case] + [ brand name in camel case] 
+In camel case:
+
+  [item name]
++ [item characteristics]
++ [brand name] 
 + [unit of measurement]
 
 Examples:
 
-- redOnions7lb
+- onionsRed7lb
 - broccoli1ea (one each)
-- detergentBrand700ml
+- detergentBrandName700ml
 ```
 
-This would make it easier to fuzzy-query item name and prices per kg/lb. 
+This makes it easier to fuzzy-query item name and prices per kg/lb. Sorting by item name first is also good for comparisons.
 
 Discussions on improvements welcomed.
 
@@ -89,7 +96,7 @@ Go to the `Discount` worksheet to set up the stores and their shortcodes.
 
 ### Other tips
 
-- Use "Duplicate sheet" to create new plans every week.
+- "Duplicate sheet" to create new plans every week.
 
 - Set a timer towards your next bus to avoid **wasting time**[^1] in the store.
 
